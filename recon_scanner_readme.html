@@ -1,0 +1,69 @@
+
+<div style="padding: 1rem 0; font-family: var(--font-mono); font-size: 13px; line-height: 1.7; color: var(--color-text-primary);">
+
+<div style="background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem 1.75rem; margin-bottom: 1rem;">
+
+<div style="font-size: 22px; font-weight: 500; margin-bottom: 4px; font-family: var(--font-sans);">ReconScanner 🔍</div>
+<div style="font-size: 14px; color: var(--color-text-secondary); font-family: var(--font-sans); margin-bottom: 16px;">Lightweight OSINT & Vulnerability Assessment Tool — pure Python, no dependencies</div>
+
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+  <span style="background: #0d1117; color: #58a6ff; border-radius: 4px; padding: 3px 10px; font-size: 11px; font-family: var(--font-mono);">Python 3.6+</span>
+  <span style="background: #0d1117; color: #3fb950; border-radius: 4px; padding: 3px 10px; font-size: 11px; font-family: var(--font-mono);">Zero Dependencies</span>
+  <span style="background: #0d1117; color: #f78166; border-radius: 4px; padding: 3px 10px; font-size: 11px; font-family: var(--font-mono);">MIT License</span>
+  <span style="background: #0d1117; color: #d29922; border-radius: 4px; padding: 3px 10px; font-size: 11px; font-family: var(--font-mono);">Educational</span>
+</div>
+
+<div style="font-family: var(--font-sans); font-size: 14px;">
+  <p style="margin-bottom: 12px; color: var(--color-text-secondary);">A lightweight, zero-dependency Python tool for recon and security auditing. Point it at a domain, IP, or email and get a full HTML report covering open ports, DNS records, SSL health, HTTP headers, web vulnerabilities, email breach status, and social media presence.</p>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px;">
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px 14px;">
+      <div style="font-weight: 500; margin-bottom: 6px;">Features</div>
+      <ul style="color: var(--color-text-secondary); font-size: 13px; padding-left: 16px; margin: 0;">
+        <li>Port scanner (26 services + banner grab)</li>
+        <li>DNS enum + subdomain brute-force</li>
+        <li>HTTP security header audit</li>
+        <li>SSL/TLS cert & protocol check</li>
+        <li>SQLi, XSS & exposed file probes</li>
+        <li>Email OSINT + breach detection</li>
+        <li>Social media scraping</li>
+        <li>WHOIS lookup</li>
+        <li>Dark-themed HTML report + JSON</li>
+      </ul>
+    </div>
+    <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px 14px;">
+      <div style="font-weight: 500; margin-bottom: 6px;">Quick start</div>
+      <div style="background: #0d1117; color: #58a6ff; border-radius: 6px; padding: 10px 12px; font-family: var(--font-mono); font-size: 12px; margin-bottom: 8px;">
+        <span style="color: #8b949e;"># clone & run</span><br>
+        git clone https://github.com/you/reconscanner<br>
+        cd reconscanner<br>
+        python3 recon_scanner.py
+      </div>
+      <div style="color: var(--color-text-secondary); font-size: 12px;">No pip install required. Works on Linux, macOS, Windows (WSL).</div>
+    </div>
+  </div>
+
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px 14px; margin-bottom: 14px;">
+    <div style="font-weight: 500; margin-bottom: 8px;">Usage</div>
+    <div style="background: #0d1117; color: #e6edf3; border-radius: 6px; padding: 10px 12px; font-family: var(--font-mono); font-size: 12px; line-height: 1.8;">
+      <span style="color: #8b949e;"># Full scan</span><br>
+      python3 recon_scanner.py -d example.com -e user@example.com -o report.html<br><br>
+      <span style="color: #8b949e;"># Quick mode (skip web checks)</span><br>
+      python3 recon_scanner.py -d example.com --quick<br><br>
+      <span style="color: #8b949e;"># Specific IP + custom ports</span><br>
+      python3 recon_scanner.py -i 1.2.3.4 --ports 22,80,443,8080
+    </div>
+  </div>
+
+  <div style="background: #2d1515; border: 0.5px solid #f78166; border-radius: var(--border-radius-md); padding: 10px 14px; font-size: 13px; color: #f0a49a;">
+    Only use against systems you own or have explicit written authorization to test. Unauthorized scanning is illegal.
+  </div>
+</div>
+
+</div>
+
+<div style="text-align: center; margin-top: 8px;">
+  <button onclick="sendPrompt('generate the full README.md file as markdown i can copy into github')" style="font-family: var(--font-sans); font-size: 13px; padding: 8px 18px; cursor: pointer; border-radius: var(--border-radius-md);">Generate full README.md ↗</button>
+</div>
+
+</div>
