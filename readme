@@ -1,0 +1,37 @@
+ReconScanner 🔍
+Lightweight OSINT & Vulnerability Assessment Tool — pure Python, no dependencies
+Python 3.6+
+Zero Dependencies
+MIT License
+Educational
+
+A lightweight, zero-dependency Python tool for recon and security auditing. Point it at a domain, IP, or email and get a full HTML report covering open ports, DNS records, SSL health, HTTP headers, web vulnerabilities, email breach status, and social media presence.
+
+
+Features
+Port scanner (26 services + banner grab)
+DNS enum + subdomain brute-force
+HTTP security header audit
+SSL/TLS cert & protocol check
+SQLi, XSS & exposed file probes
+Email OSINT + breach detection
+Social media scraping
+WHOIS lookup
+Dark-themed HTML report + JSON
+
+Quick start
+# clone & run
+git clone https://github.com/Klodi666/recon_scanner
+cd reconscanner
+python3 recon_scanner.py
+No pip install required. Works on Linux, macOS, Windows (WSL).
+
+
+# Full scan
+python3 recon_scanner.py -d example.com -e user@example.com -o report.html
+
+# Quick mode (skip web checks)
+python3 recon_scanner.py -d example.com --quick
+
+# Specific IP + custom ports
+python3 recon_scanner.py -i 1.2.3.4 --ports 22,80,443,8080
